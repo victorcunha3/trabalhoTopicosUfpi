@@ -18,7 +18,7 @@ st.set_page_config(
 @st.cache_resource
 def carregar_modelos():
     try:
-        modelo = joblib.load(r'C:\Users\victo\OneDrive\Área de Trabalho\trabalho_topicos\modelo_naive_bayes.pkl')
+        modelo = joblib.load(r'main/models/modelo_naive_bayes.pkl')
         vectorizer = joblib.load(r'C:\Users\victo\OneDrive\Área de Trabalho\trabalho_topicos\vectorizer.pkl')
         categorias = {
             0: 'Dificuldade com Leitura',
